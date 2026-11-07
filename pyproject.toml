@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enrichgrid-proxycurl"
+version = "0.1.0"
+description = "Proxycurl-style results from the EnrichGrid LinkedIn profile & company scraper API"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = ["requests>=2.28"]
+authors = [{ name = "EnrichGrid", email = "support@enrichgrid.com" }]
+keywords = ["proxycurl", "linkedin", "scraper", "enrichment", "api", "enrichgrid"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://enrichgrid.com"
+Documentation = "https://enrichgrid.com/guides/proxycurl-migration"
+Source = "https://github.com/enrichgrid/proxycurl-adapter"
+
+[tool.setuptools.packages.find]
+where = ["src"]

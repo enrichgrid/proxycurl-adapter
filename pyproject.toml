@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Proxycurl-style results from the EnrichGrid LinkedIn profile & company scraper API"
 readme = "README.md"
 license = { text = "MIT" }
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = ["requests>=2.28"]
 authors = [{ name = "EnrichGrid", email = "support@enrichgrid.com" }]
 keywords = ["proxycurl", "linkedin", "scraper", "enrichment", "api", "enrichgrid"]

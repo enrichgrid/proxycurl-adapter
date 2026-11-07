@@ -56,7 +56,10 @@ class Client:
                 body = {}
             if r.status_code in RETRY_STATUS:
                 last = r
-                time.sleep(min(float(r.headers.get("Retry-After") or 2), 60))
+                wait = float(r.headers.get("Retry-After") or 2)
+                if wait > 60:  # a long pause (e.g. provider maintenance): report it now instead of blocking
+                    break
+                time.sleep(wait)
                 continue
             if r.status_code >= 400:
                 detail = body.get("detail") if isinstance(body, dict) else None

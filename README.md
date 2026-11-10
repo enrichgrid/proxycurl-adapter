@@ -69,6 +69,13 @@ legacy = to_proxycurl_person(enrichgrid_response["profile"])
 
 Full migration guide (endpoints, Node.js, search filters): https://enrichgrid.com/guides/proxycurl-migration
 
+## See also
+
+- Starting fresh instead of porting Proxycurl code? Use the full Python SDK and CLI:
+  [`pip install enrichgrid`](https://pypi.org/project/enrichgrid/) ([source](https://github.com/enrichgrid/enrichgrid-python)).
+- No code: [Chrome extension](https://chromewebstore.google.com/detail/camfalbgbfimllhmdncpjmnaabidceci) on LinkedIn pages,
+  [n8n node and workflows](https://enrichgrid.com/integrations/n8n), [Excel/CSV upload](https://enrichgrid.com/bulk-linkedin-enrichment).
+
 ## Tests
 
 ```bash
